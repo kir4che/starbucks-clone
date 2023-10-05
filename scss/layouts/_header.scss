@@ -1,0 +1,27 @@
+header {
+	padding: 0.8em 3em;
+	gap: 2.4em;
+	background-color: $color-white;
+	border-bottom: 3px solid $starbucks-green;
+
+	@include tablet {
+		padding: 0.8em 1em;
+		gap: 2em;
+	}
+
+	img {
+		width: 52px;
+		height: 52px;
+	}
+
+	.header_navbar {
+		gap: 2em;
+		font-size: 0.875rem;
+		font-weight: 600;
+		letter-spacing: 1.5px;
+
+		li:hover {
+			color: $accent-green;
+		}
+	}
+}

@@ -1,0 +1,15 @@
+footer {
+	margin-top: 3em;
+	padding: 2em 3em 1em;
+	background-color: $gray-300;
+	border-bottom: 8px solid $starbucks-green;
+
+	@include tablet {
+		padding: 2em 1em 1em;
+	}
+
+	p {
+		opacity: 0.5;
+		font-size: 0.72rem;
+	}
+}

@@ -1,0 +1,87 @@
+.hero {
+	width: 100%;
+	height: calc(100vh - 80px);
+	background-color: $accent-green;
+}
+
+.hero-content {
+	position: relative;
+	width: 100%;
+	padding: 0 12vw;
+
+	@include laptop {
+		padding: 0 6vw;
+	}
+
+	@include tablet {
+		padding: 0;
+		flex-direction: column;
+		text-align: center;
+	}
+
+	// 飲料圖片
+	.hero-product_img {
+		z-index: 1;
+		position: absolute;
+		top: 2;
+		right: 0;
+
+		@include laptop {
+			right: -2vw;
+		}
+
+		@include tablet {
+			position: relative;
+			top: 0;
+			right: 0;
+		}
+
+		img {
+			@include tablet {
+				max-height: 480px;
+				height: 100%;
+			}
+		}
+	}
+
+	.hero-content_block {
+		z-index: 1;
+		max-width: 450px;
+		min-width: 450px;
+		color: $color-white;
+		font-size: 3.75rem;
+		font-weight: 900;
+		line-height: 1.2;
+		text-transform: uppercase;
+
+		@include tablet {
+			max-width: 100%;
+			min-width: 100%;
+		}
+
+		span {
+			color: $almold-500;
+			font-size: 1.6rem;
+			font-weight: 400;
+			letter-spacing: 1px;
+		}
+	}
+
+	.hero-circle {
+		position: absolute;
+		bottom: 2;
+		left: 45vw;
+		width: 545px;
+		height: 545px;
+		background-color: $almold-300;
+		border-radius: 50%;
+
+		@media (max-width: 1280px) {
+			left: 60vw;
+		}
+
+		@include tablet {
+			background-color: rgba(0, 0, 0, 0);
+		}
+	}
+}
