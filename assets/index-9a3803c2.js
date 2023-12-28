@@ -28,12 +28,12 @@
 	}
 })()
 const n = [
-		{ name: '南瓜派風味冷萃咖啡', slogan: '享受南瓜香料的涼爽滋味！', imagePath: '..assets/drinks/pumpkin-brew.png' },
-		{ name: '南瓜風味那堤', slogan: '杯中的秋天風味體驗', imagePath: '..assets/drinks/pumpkin-latte.png' },
+		{ name: '南瓜派風味冷萃咖啡', slogan: '享受南瓜香料的涼爽滋味！', imagePath: 'assets/pumpkin-brew.png' },
+		{ name: '南瓜風味那堤', slogan: '杯中的秋天風味體驗', imagePath: 'assets/pumpkin-latte.png' },
 		{
 			name: '南瓜派風味咖啡星冰樂',
 			slogan: '一口就讓你感受到南瓜的美味',
-			imagePath: '..assets/drinks/pumpkin-frappuccino.png',
+			imagePath: 'assets/pumpkin-frappuccino.png',
 		},
 	],
 	u = document.querySelector('.hero-content_block'),
