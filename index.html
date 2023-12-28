@@ -10,10 +10,16 @@
   </head>
   <body>
     <!-- Header -->
-    <header class="flex-center"></header>
-    <script type="text/javascript">
-        $('header').load('./layouts/header.html')
-    </script>
+    <header class="flex-center">
+      <a href="/home/index.html">
+      <img src="./assets/logo.png" alt="logo">
+    </a>
+    <ul class="header_navbar flex-center">
+      <li><a href="/coffee/catalog.html">咖啡</a></li>
+      <li><a href="/products/drinks.html">飲品</a></li>
+      <li><a href="/stores/catalog.html">門市</a></li>        
+    </ul>
+    </header>
     <!-- Main -->
     <main>
       <article class="hero flex-center">
@@ -87,10 +93,7 @@
       </article>
     </main>
     <!-- Footer -->
-    <footer></footer>
-    <script type="text/javascript">
-        $('footer').load('./layouts/footer.html')
-    </script>
+    <footer><p>Copyright © 2023 kir4che.</p></footer>
     <script type="module" src="./js/script.js"></script>
   </body>
 </html>
